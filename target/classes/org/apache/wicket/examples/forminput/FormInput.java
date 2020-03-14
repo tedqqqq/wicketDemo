@@ -99,6 +99,7 @@ public class FormInput extends WicketExamplePage
 				new RangeValidator<>(0, 100)));
 
 			add(new CheckBox("booleanProperty"));
+			
 			add(new Multiply("multiply"));
 			// display the multiply result
 			Label multiplyLabel = new Label("multiplyLabel", new PropertyModel<Integer>(
@@ -106,6 +107,7 @@ public class FormInput extends WicketExamplePage
 			// just for fun, add a border so that our result will be displayed as '[ x ]'
 			multiplyLabel.add(new BeforeAndAfterBorder());
 			add(multiplyLabel);
+			
 			RadioChoice<String> rc = new RadioChoice<>("numberRadioChoice", NUMBERS).setSuffix("");
 			rc.setLabel(new Model<>("number"));
 			rc.setRequired(true);
